@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Jumpy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img id="dnc" src="logoDnc.svg" alt="Logo da DNC">
+    </header>
+
+    <section>        
+
+        <div id="title">
+            <img id="jumpy" src="jumpy.svg" alt="Imagem jumpy">
+            <h1>Bem vindo ao Jumpy!</h1>
+        </div>       
+
+        <form id="formulario" action="">
+
+            <div class="formGroup">
+                <label for="">Nome Completo:</label>
+                <input id="cname" type="text" placeholder="Nome completo">
+                <label class="erro" id="erroNome"></label>
+                <div class="error" id="nomeObrigatorio"> Campo Obrigatório! </div>
+            </div>
+
+            <div class="formGroup">
+                <label for="">E-mail:</label>
+                <input id="cemail" type="email" placeholder="Email@email.com">
+                <label class="erro" id="erroEmail"></label>
+                <div class="error" id="emailObrigatorio"> Campo Obrigatório! </div>
+            </div>
+
+            <div class="formGroup">
+                <label for="">Telefone:</label>
+                <input id="ctelefone" type="phone" placeholder="(00) 00000-0000">
+                <label class="erro" id="erroTelefone"></label>
+                <div class="error" id="telObrigatorio"> Campo Obrigatório! </div>
+            </div>
+
+            <div class="formGroup">
+                <label for="">CPF:</label>
+                <input id="ccpf" type="numberId" placeholder="000.000.000-00">
+                <label class="erro" id="erroCpf"></label>
+                <div class="error" id="cpfObrigatorio"> Campo Obrigatório! </div>
+            </div>
+
+            <div class="formGroup">
+                <label for="">Senha:</label>
+                <input id="csenha" type="password" placeholder="*******************">
+                <label class="erro" id="erroPassword"></label>
+                <div class="error" id="senhaObrigatorio"> Campo Obrigatório! </div>
+            </div>
+
+            <input onclick="Obrigatorio()" type="submit" value="Cadastrar">
+            <div class="success" id="success"> Sucesso ! </div>
+            <div class="cerror" id="campoObrigatorio"> Campos obrigatórios não registrados. </div>
+
+        </form>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
